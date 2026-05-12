@@ -59,14 +59,43 @@ The repo intentionally ignores live runtime data such as:
 - Python cache files
 - backup files
 
-## Restore Sketch
+## Restore (Real Script)
 
-1. Copy this repo folder to the Windows Startup location as `ai-hub-v2`.
-2. Copy `startup/nerve-tts-hotkey.ahk` into the Windows Startup folder.
-3. Make sure `Nerve TTS Engine` is installed as the Edge app.
-4. Make sure `B:\AI-HUB-SYNC` exists or update paths in the config.
-5. Start `AI-HUB.ahk`.
+Run:
+
+`restore_known_good_to_startup.bat`
+
+What it does:
+
+1. Rebuilds `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\ai-hub-v2` from this known-good repo.
+2. Refreshes `nerve-tts-hotkey.ahk` in Startup.
+3. Leaves live data folders out of the restore copy.
+
+## Daily Local Export
+
+Run:
+
+`daily_export_to_sync.bat`
+
+Export target:
+
+`B:\AI-HUB-SYNC\exports\YYYY-MM-DD\`
+
+Export contents:
+
+- `restore.ini`
+- `manifest.json`
+- `config/`
+- `databases/`
+- `saved/`
+
+Cloudflare/R2 backup retention is intentionally deferred until local exports are stable.
 
 ## Do Not Push Public
 
 This is a local workflow repo. Review credentials, tokens, local paths, and personal data before publishing anywhere public.
+
+
+## Pre-Public Push Audit
+
+Run `audit_for_public_push.bat` before any public push to scan for hard-coded secrets/tokens.
