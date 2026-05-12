@@ -43,6 +43,7 @@ Added docs from:
 
 ## Next Work
 
-- Add daily export into `B:\AI-HUB-SYNC\exports\YYYY-MM-DD\`.
-- Add Cloudflare/R2 14-day backup retention.
+- Added `daily_export_to_sync.bat` for `B:\AI-HUB-SYNC\exports\YYYY-MM-DD\`.
+- Added `restore_known_good_to_startup.bat` for one-step Startup restore.
+- Next: add Cloudflare/R2 14-day backup retention after local export stability is confirmed.
 - Reconcile this known-good repo with the older `D:\GitHub\physics-of-faith\ai-hub` repo.
