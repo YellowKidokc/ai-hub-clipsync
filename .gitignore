@@ -1,0 +1,59 @@
+# ============================================================
+# AI-HUB v2 — .gitignore
+# ============================================================
+
+# User-specific config (contains API keys, personal settings)
+config/settings.ini
+config/storage.json
+config/hotkeys.ini
+config/hotstrings.sav
+
+# Server runtime data (user's actual clips/bookmarks/prompts)
+clipsync-bridge/data/*.json
+
+# Clipboard runtime data
+clipboard/config/clipboard_data.json
+clipboard/config/clipboard_settings.ini
+
+# Sync server runtime data (SQLite DB, window state)
+Data/
+
+# Local clipboard/text scratch
+Clipboard Text.txt
+
+# Local/private dashboard variants
+*.local.html
+
+# Build artifacts
+dist/
+
+# Backup files
+*.bak
+*.bak_*
+*.backup-*
+
+# BetterTTS user settings
+BetterTTS/settings.ini
+
+# Test artifacts
+BetterTTS/normalizer/test_*.txt
+BetterTTS/normalizer/master_contents.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

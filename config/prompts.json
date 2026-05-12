@@ -1,0 +1,3 @@
+﻿[
+  {"name":"/claude", "template":"claude --dangerously-skip-permissions", "shortcut":"claude", "replace":true, "popup":false}
+]

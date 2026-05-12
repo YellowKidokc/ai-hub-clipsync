@@ -1,0 +1,49 @@
+﻿{
+    "name":  "AI-HUB File Sync",
+    "engine":  "Syncthing",
+    "folders":  [
+                    {
+                        "id":  "documents",
+                        "label":  "Documents",
+                        "path":  "C:\\Users\\lowes\\Documents",
+                        "syncthing_folder_id":  "aihub-documents",
+                        "mode":  "sendreceive"
+                    },
+                    {
+                        "id":  "videos",
+                        "label":  "Videos",
+                        "path":  "C:\\Users\\lowes\\Videos",
+                        "syncthing_folder_id":  "aihub-videos",
+                        "mode":  "sendreceive"
+                    },
+                    {
+                        "id":  "music",
+                        "label":  "Music",
+                        "path":  "C:\\Users\\lowes\\Music",
+                        "syncthing_folder_id":  "aihub-music",
+                        "mode":  "sendreceive"
+                    },
+                    {
+                        "id":  "pictures",
+                        "label":  "Pictures",
+                        "path":  "C:\\Users\\lowes\\Pictures",
+                        "syncthing_folder_id":  "aihub-pictures",
+                        "mode":  "sendreceive"
+                    },
+                    {
+                        "id":  "nlp",
+                        "label":  "NLP",
+                        "path":  "C:\\Users\\lowes\\Documents\\AI-HUB-NLP",
+                        "syncthing_folder_id":  "aihub-nlp",
+                        "mode":  "sendreceive"
+                    },
+                    {
+                        "id":  "articles_md",
+                        "label":  "Articles MD",
+                        "path":  "D:\\GTQ-BUILD\\articles\\MD",
+                        "syncthing_folder_id":  "aihub-articles-md",
+                        "mode":  "sendreceive"
+                    }
+                ],
+    "notes":  "Use these same Syncthing folder ids on each computer so AI-HUB can display shared status."
+}
